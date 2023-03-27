@@ -2,17 +2,99 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 main{
     width: 100%;
     height: 100vh;
     padding: 50px;
+    background-color: #333;
 }
+
 .container{
     text-align: center;
     margin: 0 auto;
     width: 80%;
+    color: white;
+}
 
-    border: 1px solid red;
+.form{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+.form span{
+    align-self: flex-start;
+    margin: 5px 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.form label{
+    align-self: flex-start;
+}
+
+#type-mail{
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.sez-btn{
+    display: flex;
+    justify-content: center;
+}
+
+#btn{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    align-self: center;
+    margin: 10px 3px;
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-color: rgb(255, 231, 167);
+    border: 2px solid rgb(0, 0, 0) ;
+    font-size: 15px;
+    box-shadow: 3px 3px 5px lightcyan;
+}
+
+
+.game{
+    width: 80%;
+    height: 50vh;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+.estrazione-dado{
+    font-size: 50px;
+}
+
+.risultato{
+    position: absolute;
+    height: 150px;
+    width: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#play{
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
